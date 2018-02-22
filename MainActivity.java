@@ -1,4 +1,20 @@
-@Override
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import java.util.Random;
+
+public class MainActivity extends AppCompatActivity {
+    Button b_rock, b_scissors, b_paper;
+    TextView tv_score;
+    ImageView iv_computerChoice, iv_humanChoice;
+    int HumanScore, ComputerScore = 0;
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -82,3 +98,4 @@
         } else return "Not Sure";
     }
 }
+
